@@ -1,4 +1,4 @@
-set(CMAKE_CXX_STANDARD 11)
+SET(cmake_cxx_standard 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #
 # -- Qt5  set Qt5_DIR
@@ -75,6 +75,7 @@ list(APPEND QGLE_LIBRARIES
 	Qt::Widgets
 	Qt::OpenGL
 	${CAIRO_LIBRARIES}
+	${CMAKE_DL_LIBS}
 )
 if(UNIX AND NOT APPLE)
 	list(APPEND QGLE_LIBRARIES
